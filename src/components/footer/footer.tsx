@@ -4,62 +4,62 @@ import Link from "next/link";
 
 const links = [
   {
-    title: "Acme",
+    title: "reservApp",
     links: [
       {
-        label: "Download App",
+        label: "Descargar App",
         href: "https://apps.apple.com/",
-        title: "Download the app from the App Store",
+        title: "Descargar la aplicación de la App Store",
       },
       {
-        label: "Features",
+        label: "Funciones",
         href: "/#features",
-        title: "See our features",
+        title: "Mira nuestras funciones",
       },
       {
-        label: "Pricing",
+        label: "Precios",
         href: "/pricing",
-        title: "View pricing",
+        title: "Ver precios",
       },
     ],
   },
   {
-    title: "Products",
+    title: "Productos",
     links: [
       {
-        label: "For Android",
+        label: "Para Android",
         href: "https://play.google.com/store",
-        title: "Download on Android",
+        title: "Descargar en Android",
       },
       {
-        label: "For iPhone",
+        label: "Para iPhone",
         href: "https://apps.apple.com/",
-        title: "Download on iOS",
+        title: "Descargar en iOS",
       },
     ],
   },
   {
-    title: "Company",
+    title: "Compañía",
     links: [
       {
-        label: "Terms & Conditions",
+        label: "Términos y condiciones",
         href: "/terms-and-conditions",
-        title: "Read our Terms & Conditions",
+        title: "Lee nuestros términos y condiciones",
       },
       {
-        label: "Privacy Policy",
+        label: "Política de privacidad",
         href: "/privacy-policy",
-        title: "Read our Privacy Policy",
+        title: "Lee nuestra política de privacidad",
       },
       {
-        label: "Refund Policy",
+        label: "Política de reembolso",
         href: "/refund-policy",
-        title: "Read our Refund Policy",
+        title: "Lee nuestra política de reembolso",
       },
     ],
   },
   {
-    title: "Follow Us",
+    title: "Síguenos",
     links: [
       {
         label: (
@@ -69,7 +69,7 @@ const links = [
           </div>
         ),
         href: "https://x.com/",
-        title: "Follow us on Twitter",
+        title: "Síguenos en Twitter",
       },
       {
         label: (
@@ -79,7 +79,7 @@ const links = [
           </div>
         ),
         href: "https://www.linkedin.com/",
-        title: "Connect with us on LinkedIn",
+        title: "Conéctate con nosotros en LinkedIn",
       },
       {
         label: (
@@ -89,7 +89,7 @@ const links = [
           </div>
         ),
         href: "https://github.com/",
-        title: "View our GitHub repository",
+        title: "Mira nuestro repositorio de GitHub",
       },
     ],
   },

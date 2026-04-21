@@ -33,7 +33,7 @@ export function DesktopNav({ items, className }: Props) {
         </NavigationMenuList>
       </NavigationMenu>
       <Button asChild>
-        <Link href="/pricing">Get Started</Link>
+        <Link href="/pricing">Comenzar</Link>
       </Button>
     </nav>
   );

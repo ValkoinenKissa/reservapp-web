@@ -20,7 +20,7 @@ export function MobileNav({ items, className }: Props) {
       </Link>
       <Drawer direction="top">
         <DrawerTrigger className="relative -m-2 cursor-pointer p-2">
-          <span className="sr-only">Open menu</span>
+          <span className="sr-only">Abrir menú</span>
           <Menu className="h-6 w-6" />
         </DrawerTrigger>
         <DrawerContent className="flex flex-col gap-4 p-8">

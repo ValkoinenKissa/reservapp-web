@@ -15,7 +15,7 @@ import { type Price, usePaddlePrices } from "@/hooks/use-paddle-prices";
 export const plans = [
   {
     priceId: "pri_01jx2rwhdtm4b5f3aj1ds3b0s4",
-    tag: "Save 17%",
+    tag: "Ahorra 17%",
   },
   {
     priceId: "pri_01jx2rx1t30hxejpb5v0vav4nv",
@@ -23,7 +23,7 @@ export const plans = [
 ];
 
 function priceDescription(price: Price) {
-  return `Automatically renews at ${price.total} per ${price.interval}`;
+  return `Se renueva automáticamente a ${price.total} cada ${price.interval}`;
 }
 
 type Props = {

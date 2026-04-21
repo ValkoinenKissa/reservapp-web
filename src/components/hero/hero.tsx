@@ -19,17 +19,17 @@ export function Hero() {
             <PillAvatar src="/avatars/4.jpg" />
           </PillAvatarGroup>
           <p className="text-muted-foreground px-2 text-xs font-medium sm:border-l-1 sm:text-sm">
-            Join <span className="text-foreground">3 Million</span> other users already on board
+            Únete a los <span className="text-foreground">3 millones</span> de usuarios que ya están a bordo.
           </p>
         </Pill>
         <h1 className="text-center text-4xl leading-[1.1] font-medium tracking-tight sm:text-7xl">
-          Meet the App<span className="text-muted-foreground block">That Does It All.</span>
+          La app de gestión de comunidades<span className="text-muted-foreground block">100% open source</span>
         </h1>
         <p className="max-w-lg text-center leading-6 tracking-tight sm:text-xl">
-          Powerful, intuitive, and ready to make your life easier, start using Acme App today.
+          Simple, rápida y centrada en el usuario para hacerte la vida más simple, prueba reservapp hoy mismo.
         </p>
         <Button className="mb-10 w-fit" size="lg" asChild>
-          <Link href="/pricing">Get Started</Link>
+          <Link href="/pricing">Comienza hoy</Link>
         </Button>
         <Image src="/app-image-1.png" alt="Hero" width={304} height={445} />
       </div>

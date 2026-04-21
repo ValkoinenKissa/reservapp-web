@@ -4,8 +4,8 @@ import { RadialBlur } from "@/components/pricing/radial-blur";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing - Paddle Web Payments Starter",
-  description: "Unlock Scam Protection, VPN, and more",
+  title: "Precios - reservApp",
+  description: "Desbloquea funciones premium y gestiona tu comunidad eficientemente",
 };
 
 export default function Pricing() {
