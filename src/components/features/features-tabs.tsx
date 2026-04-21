@@ -2,6 +2,7 @@
 
 import { FeatureDetails } from "@/components/features/feature-details";
 import type { Feature } from "@/components/features/features";
+import { CodeBlock } from "@/components/features/code-block";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -30,8 +31,12 @@ export function FeaturesTabs({ features, className }: Props) {
       </TabsList>
       {features.map((feature) => (
         <TabsContent key={feature.title} value={feature.title}>
-          <div className="bg-card flex w-full justify-center rounded-lg border p-8 pb-0">
-            <Image src={feature.image} alt="App Image" width={304} height={445} />
+          <div className="bg-card flex min-h-[445px] w-full justify-center rounded-lg border p-8">
+            {feature.image ? (
+              <Image src={feature.image} alt="App Image" width={304} height={445} className="h-auto object-contain" />
+            ) : (
+              <CodeBlock code={feature.code || ""} />
+            )}
           </div>
         </TabsContent>
       ))}

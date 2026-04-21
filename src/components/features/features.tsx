@@ -7,7 +7,8 @@ export type Feature = {
   icon: React.ReactNode;
   title: string;
   description: string;
-  image: string;
+  image?: string;
+  code?: string;
 };
 
 const features = [
@@ -33,7 +34,41 @@ const features = [
     icon: <ChartNoAxesColumnIcon size={20} />,
     title: "Open-source",
     description: "Cualquiera puede visualizar y auditar nuestro codigo fuente, ademas con nostros no solo puedes limitarte a soliticar una funcion nueva, sino que tienes la libertad de desarrollarlo tu mismo",
-    image: "/carbon.png",
+    code: `
+
+    private fun signInWithGoogle() {
+        val credentialManager = CredentialManager.create(requireContext())
+
+        // Usamos GetGoogleIdOption para activar el Bottom Sheet (diseño hasta la mitad)
+        val googleIdOption = GetGoogleIdOption.Builder()
+            .setFilterByAuthorizedAccounts(false)
+            .setServerClientId(WEB_CLIENT_ID)
+            .setAutoSelectEnabled(false) // Opcional: true para login automático si solo hay una cuenta
+            .build()
+
+        val request = GetCredentialRequest.Builder()
+            .addCredentialOption(googleIdOption)
+            .build()
+
+        lifecycleScope.launch {
+            try {
+                val result = credentialManager.getCredential(
+                    context = requireActivity(),
+                    request = request
+                )
+
+                val credential = result.credential
+                val googleIdTokenCredential = GoogleIdTokenCredential.createFrom(credential.data)
+                val idToken = googleIdTokenCredential.idToken
+
+                viewModel.loginWithGoogle(idToken)
+
+            } catch (e: GetCredentialException) {
+                FirebaseAuth.getInstance().signOut()
+            }
+        }
+    }
+    `,
   },
 ] satisfies Feature[];
 
