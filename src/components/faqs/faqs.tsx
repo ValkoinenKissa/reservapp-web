@@ -37,45 +37,53 @@ export function FAQs() {
           FAQ
         </Badge>
         <h2 className="text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-          Frequently
+          Preguntas
           <br />
-          Asked <span className="text-muted-foreground">Questions</span>
+          <span className="text-muted-foreground">frecuentes</span>
         </h2>
         <p className="max-w-lg text-xs leading-6 tracking-tight sm:text-base">
-          Get answers to commonly asked questions.
+          Obtén respuestas rápidas a las dudas más comunes.
         </p>
         <Button className="w-fit" size="lg" asChild>
-          <Link href="/pricing">Get Started</Link>
+          <Link href="/pricing">Comienza ahora</Link>
         </Button>
       </div>
       <Accordion type="single" collapsible defaultValue="branding" className="grid w-full gap-4">
         <AccordionItemFAQs value="branding">
-          <AccordionTriggerFAQs>Will my app show your branding anywhere?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>¿Cuánto me va a costar utilizar reservApp?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Never. Your app will be fully white-labeled with your own name, logo, and design. We stay completely
-              invisible.
+              Nada, actualmente este proyecto ha nacido como un MVP creado a partir de un proyecto de fin de ciclo, si
+              algún día nos hiciera falta más recursos valoraríamos monetizar la app a través de funciones premium, jamás
+              a través de anuncios abusivos.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
         <AccordionItemFAQs value="skills">
-          <AccordionTriggerFAQs>Do I need technical skills to use Acme?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>¿Necesito alguna habilidad técnica para usar reservApp?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              No. We handle all the technical setup for you. You can focus on your business while we handle the rest.
+              No, hemos diseñado la app siguiendo las guías de diseño de material design para que sea sencilla y
+              atractiva de usar para todo tipo de usuarios.
             </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
         <AccordionItemFAQs value="devices">
-          <AccordionTriggerFAQs>Will my app work on all devices?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>¿Mi app funcionará en todos los dispositivos?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
-            <p>Yes. Our app is designed to work on all devices, including iOS and Android.</p>
+            <p>
+              Por el momento reservApp solo está disponible en dispositivos android con una versión de Android 9 o
+              superior. Estamos trabajando para traer reservApp a iOS y como aplicación web.
+            </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
         <AccordionItemFAQs value="notifcations">
-          <AccordionTriggerFAQs>Can I send notifications and updates to users?</AccordionTriggerFAQs>
+          <AccordionTriggerFAQs>¿Puedo enviar o recibir notificaciones de los usuarios?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
-            <p>Yes. You can send notifications and updates to users through our app.</p>
+            <p>
+              Sí, puedes recibir notificaciones de tus próximas reservas, pero aún estamos trabajando en otros tipos de
+              notificaciones.
+            </p>
           </AccordionContentFAQs>
         </AccordionItemFAQs>
       </Accordion>

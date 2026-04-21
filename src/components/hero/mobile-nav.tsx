@@ -15,12 +15,12 @@ type Props = {
 export function MobileNav({ items, className }: Props) {
   return (
     <nav className={cn("flex w-full max-w-7xl items-center justify-between gap-4", className)}>
-      <Link href="/">
-        <Image src="/logo.svg" alt="logo" width={86} height={26} />
+      <Link href="/" className="mt-9">
+        <Image src="/logo.svg" alt="logo" width={140} height={80} />
       </Link>
       <Drawer direction="top">
         <DrawerTrigger className="relative -m-2 cursor-pointer p-2">
-          <span className="sr-only">Open menu</span>
+          <span className="sr-only">Abrir menú</span>
           <Menu className="h-6 w-6" />
         </DrawerTrigger>
         <DrawerContent className="flex flex-col gap-4 p-8">

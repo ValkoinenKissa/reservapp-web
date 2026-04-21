@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Paddle Web Payments Starter",
-  description: "A vercel template for taking web payments for mobile apps with Paddle",
+  title: "reservApp - Gestión de Comunidades",
+  description: "La plataforma definitiva para la gestión de comunidades de propietarios.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${inter.variable} antialiased`}>
         {children}
         <Toaster />
