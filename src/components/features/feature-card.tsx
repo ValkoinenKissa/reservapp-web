@@ -16,7 +16,7 @@ export function FeatureCard({ feature, isActive }: FeatureCardProps) {
         {feature.image ? (
           <Image src={feature.image} alt="App Image" width={304} height={445} className="h-auto w-full object-contain" />
         ) : (
-          <CodeBlock code={feature.code || ""} className="scale-90" />
+          <CodeBlock code={feature.code || ""} />
         )}
       </div>
     </div>

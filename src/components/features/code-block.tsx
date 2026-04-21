@@ -37,19 +37,21 @@ export function CodeBlock({ code, filename = "AuthService.kt", className }: Code
           style={oneDark}
           showLineNumbers={true}
           lineNumberStyle={{ 
-            minWidth: "3.2em", 
-            paddingRight: "1.5em", 
+            minWidth: "2.5em", 
+            paddingRight: "1em", 
             color: "rgba(255,255,255,0.15)", 
             textAlign: "right",
-            userSelect: "none"
+            userSelect: "none",
+            fontSize: "11px",
           }}
           customStyle={{
             margin: 0,
-            padding: "1.5rem",
+            padding: "1rem 1rem 1.5rem 0.5rem", // Less padding on left/top for mobile
             backgroundColor: "transparent",
-            fontSize: "13px",
-            lineHeight: "1.7",
+            fontSize: "12px", // Smaller font on mobile
+            lineHeight: "1.6",
           }}
+          className="md:!text-[13px] md:!p-6 md:!px-8" // Restore size on desktop using !important to override library styles
         >
           {code.trim()}
         </SyntaxHighlighter>
