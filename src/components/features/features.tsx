@@ -39,11 +39,10 @@ const features = [
     private fun signInWithGoogle() {
         val credentialManager = CredentialManager.create(requireContext())
 
-        // Usamos GetGoogleIdOption para activar el Bottom Sheet (diseño hasta la mitad)
         val googleIdOption = GetGoogleIdOption.Builder()
             .setFilterByAuthorizedAccounts(false)
             .setServerClientId(WEB_CLIENT_ID)
-            .setAutoSelectEnabled(false) // Opcional: true para login automático si solo hay una cuenta
+            .setAutoSelectEnabled(false)
             .build()
 
         val request = GetCredentialRequest.Builder()
