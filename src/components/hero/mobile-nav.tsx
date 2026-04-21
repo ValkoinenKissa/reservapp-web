@@ -1,7 +1,7 @@
 import { Drawer, DrawerContent, DrawerTrigger, DrawerTitle } from "@/components/ui/drawer";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
-import Image from "next/image";
+import { Logo } from "@/components/ui/logo";
 import Link from "next/link";
 
 type Props = {
@@ -15,9 +15,7 @@ type Props = {
 export function MobileNav({ items, className }: Props) {
   return (
     <nav className={cn("flex w-full max-w-7xl items-center justify-between gap-4", className)}>
-      <Link href="/" className="mt-9">
-        <Image src="/logo.svg" alt="logo" width={140} height={80} />
-      </Link>
+      <Logo />
       <Drawer direction="top">
         <DrawerTrigger className="relative -m-2 cursor-pointer p-2">
           <span className="sr-only">Abrir menú</span>

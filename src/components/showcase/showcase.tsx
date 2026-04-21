@@ -25,7 +25,10 @@ export function Showcase() {
       </Wreath>
       <Wreath>
         <p className="text-[0.625rem] md:text-base">100%</p>
-        <p className="text-xs font-bold md:mt-1.5 md:text-2xl">OpenSource</p>
+        <p className="mt-1.5 text-center text-xs font-bold text-balance md:text-2xl">
+          Open
+          <br />
+          Source</p>
       </Wreath>
     </div>
   );
