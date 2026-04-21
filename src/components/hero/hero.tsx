@@ -16,7 +16,6 @@ export function Hero() {
             <PillAvatar src="/avatars/1.jpg" />
             <PillAvatar src="/avatars/2.jpg" />
             <PillAvatar src="/avatars/3.jpg" />
-            <PillAvatar src="/avatars/4.jpg" />
           </PillAvatarGroup>
           <p className="text-muted-foreground px-2 text-xs font-medium sm:border-l-1 sm:text-sm">
             Únete a los <span className="text-foreground">3</span> usuarios que ya están a bordo.
