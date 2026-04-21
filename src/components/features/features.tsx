@@ -15,25 +15,25 @@ const features = [
     icon: <SlidersIcon size={20} />,
     title: "Control total de tu comunidad",
     description: "Hazla tuya, personaliza el nombre, descripcion ubicacion y mas",
-    image: "/app-image-1.png",
+    image: "/sc_communities.png",
   },
   {
     icon: <ZapIcon size={20} />,
     title: "Rapida, desarrollada 100% en Kotlin",
     description: "Construida en Kotlin el estandar oficial de Google para las aplicaciones android en 2026",
-    image: "/app-image-1.png",
+    image: "/kotlin_official.png",
   },
   {
     icon: <ActivityIcon size={20} />,
     title: "Incidencias en tiempo real",
     description: "Interactua con tus usuarios en tiempo real, con incidencias, recursos etc.",
-    image: "/app-image-1.png",
+    image: "/sc_issues.png",
   },
   {
     icon: <ChartNoAxesColumnIcon size={20} />,
     title: "Open-source",
     description: "Cualquiera puede visualizar y auditar nuestro codigo fuente, ademas con nostros no solo puedes limitarte a soliticar una funcion nueva, sino que tienes la libertad de desarrollarlo tu mismo",
-    image: "/app-image-1.png",
+    image: "/carbon.png",
   },
 ] satisfies Feature[];
 
