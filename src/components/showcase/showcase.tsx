@@ -16,7 +16,7 @@ export function Showcase() {
         <p className="text-xl font-bold md:mt-1.5 md:text-3xl">4.9</p>
       </Wreath>
       <Wreath>
-        <p className="text-[0.625rem] md:text-base">El mejor alidado</p>
+        <p className="text-[0.625rem] md:text-base">El mejor aliado</p>
         <p className="mt-1.5 text-center text-xs font-bold text-balance md:text-2xl">
           Para
           <br />
