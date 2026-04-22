@@ -85,7 +85,7 @@ const links = [
         label: (
           <div className="flex items-center gap-2">
             <GithubIcon className="h-4 w-4" />
-            <span>Github</span>
+            <span>GitHub</span>
           </div>
         ),
         href: "https://github.com/",

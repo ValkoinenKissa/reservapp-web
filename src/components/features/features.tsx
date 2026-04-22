@@ -15,35 +15,34 @@ const features = [
   {
     icon: <SlidersIcon size={20} />,
     title: "Control total de tu comunidad",
-    description: "Hazla tuya, personaliza el nombre, descripcion ubicacion y mas",
+    description: "Hazla tuya, personaliza el nombre, descripción, ubicación y más",
     image: "/sc_communities.png",
   },
   {
     icon: <ZapIcon size={20} />,
-    title: "Rapida, desarrollada 100% en Kotlin",
-    description: "Construida en Kotlin el estandar oficial de Google para las aplicaciones android en 2026",
+    title: "Rápida, desarrollada 100% en Kotlin",
+    description: "Construida en Kotlin, el estándar oficial de Google para las aplicaciones Android en 2026",
     image: "/kotlin_official.png",
   },
   {
     icon: <ActivityIcon size={20} />,
     title: "Incidencias en tiempo real",
-    description: "Interactua con tus usuarios en tiempo real, con incidencias, recursos etc.",
+    description: "Interactúa con tus usuarios en tiempo real, con incidencias, recursos, etc.",
     image: "/sc_issues.png",
   },
   {
     icon: <ChartNoAxesColumnIcon size={20} />,
     title: "Open-source",
-    description: "Cualquiera puede visualizar y auditar nuestro codigo fuente, ademas con nostros no solo puedes limitarte a soliticar una funcion nueva, sino que tienes la libertad de desarrollarlo tu mismo",
+    description: "Cualquiera puede visualizar y auditar nuestro código fuente, además con nosotros no solo puedes limitarte a solicitar una función nueva, sino que tienes la libertad de desarrollarla tú mismo",
     code: `
 
     private fun signInWithGoogle() {
         val credentialManager = CredentialManager.create(requireContext())
 
-        // Usamos GetGoogleIdOption para activar el Bottom Sheet (diseño hasta la mitad)
         val googleIdOption = GetGoogleIdOption.Builder()
             .setFilterByAuthorizedAccounts(false)
             .setServerClientId(WEB_CLIENT_ID)
-            .setAutoSelectEnabled(false) // Opcional: true para login automático si solo hay una cuenta
+            .setAutoSelectEnabled(false)
             .build()
 
         val request = GetCredentialRequest.Builder()
@@ -79,7 +78,7 @@ export function Features() {
         Funciones
       </Badge>
       <h2 className="text-center text-3xl leading-[1.1] font-medium tracking-tight sm:text-5xl">
-        Descubre nuestras<div className="text-muted-foreground">Funciones unicas</div>
+        Descubre nuestras<div className="text-muted-foreground">Funciones únicas</div>
       </h2>
       <p className="mb-3 max-w-lg text-center leading-6 tracking-tight sm:text-xl lg:mb-8">
         Hemos creado la plataforma de gestión de comunidades definitiva para que puedas centrarte en disfrutar de tu

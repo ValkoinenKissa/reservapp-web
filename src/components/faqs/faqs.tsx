@@ -72,7 +72,7 @@ export function FAQs() {
           <AccordionTriggerFAQs>¿Mi app funcionará en todos los dispositivos?</AccordionTriggerFAQs>
           <AccordionContentFAQs>
             <p>
-              Por el momento reservApp solo está disponible en dispositivos android con una versión de Android 9 o
+              Por el momento reservApp solo está disponible en dispositivos Android con una versión de Android 9 o
               superior. Estamos trabajando para traer reservApp a iOS y como aplicación web.
             </p>
           </AccordionContentFAQs>

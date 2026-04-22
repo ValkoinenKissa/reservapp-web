@@ -16,7 +16,6 @@ export function Hero() {
             <PillAvatar src="/avatars/1.jpg" />
             <PillAvatar src="/avatars/2.jpg" />
             <PillAvatar src="/avatars/3.jpg" />
-            <PillAvatar src="/avatars/4.jpg" />
           </PillAvatarGroup>
           <p className="text-muted-foreground px-2 text-xs font-medium sm:border-l-1 sm:text-sm">
             Únete a los <span className="text-foreground">3</span> usuarios que ya están a bordo.
@@ -26,7 +25,7 @@ export function Hero() {
           La app de gestión de comunidades<span className="text-muted-foreground block">100% open source</span>
         </h1>
         <p className="max-w-lg text-center leading-6 tracking-tight sm:text-xl">
-          Simple, rápida y centrada en el usuario para hacerte la vida más simple, prueba reservapp hoy mismo.
+          Simple, rápida y centrada en el usuario para hacerte la vida más simple, prueba reservApp hoy mismo.
         </p>
         <Button className="mb-10 w-fit" size="lg" asChild>
           <Link href="/pricing">Comienza hoy</Link>
