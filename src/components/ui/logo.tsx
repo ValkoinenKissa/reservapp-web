@@ -1,22 +1,24 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   className?: string;
 };
 
 /**
- * Logo de reservApp renderizado directamente desde el SVG original,
- * sin ningún tipo de escalado ni transformación.
+ * Logo de reservApp renderizado desde el archivo PNG optimizado con next/image.
  */
 export function Logo({ className }: Props) {
   return (
     <Link href="/" className={cn("mt-9 inline-block select-none", className)}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/logo.svg"
+      <Image
+        src="/logo.png"
         alt="reservApp"
-        style={{ width: "175px", height: "auto" }}
+        width={175}
+        height={100}
+        style={{ height: "auto" }}
+        priority
       />
     </Link>
   );
