@@ -37,7 +37,7 @@ export function DesktopNav({ items, className }: Props) {
         </NavigationMenuList>
       </NavigationMenu>
       <Button asChild>
-        <Link href="#download">Comenzar</Link>
+        <Link href={process.env.NEXT_PUBLIC_DOWNLOAD_URL || "#download"}>Comenzar</Link>
       </Button>
     </nav>
   );
