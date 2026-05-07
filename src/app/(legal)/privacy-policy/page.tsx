@@ -26,19 +26,36 @@ export default function PrivacyPolicy() {
           </div>
 
           <div className="text-foreground/90 space-y-6 text-lg leading-relaxed">
-            <p>
-              Tu privacidad es importante para nosotros. En esta etapa de MVP, reservApp recopila únicamente los datos
-              estrictamente necesarios para el funcionamiento de la gestión de reservas de tu comunidad.
-            </p>
-            <p>
-              Nos comprometemos a no vender, alquilar ni compartir tu información personal con terceros con fines
-              comerciales. Al ser un proyecto open source, puedes auditar nuestro código en cualquier momento.
-            </p>
-            <p>
-              Estamos redactando un documento legal completo que detallará cómo tratamos cada dato. Mientras tanto, si
-              tienes cualquier duda, puedes consultar nuestro código en GitHub.
-            </p>
-            <p className="text-muted-foreground pt-4 text-sm font-medium">Última actualización: Mayo 2026</p>
+           <p> En reservApp nos tomamos la privacidad muy en serio. Esta aplicación recopila únicamente los datos necesarios para el funcionamiento básico de la plataforma y la gestión de reservas. </p> 
+           <p> No vendemos, alquilamos ni compartimos información personal con terceros con fines comerciales. </p> 
+           <p>
+             La plataforma utiliza{" "}
+             <a
+               href="https://firebase.google.com/support/privacy"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4"
+             >
+               Firebase
+             </a>
+             , proporcionado por Google, como infraestructura backend y sistema de almacenamiento de datos.
+           </p> 
+           <p> También utilizamos Google Analytics for Firebase para recopilar métricas técnicas y analíticas anónimas relacionadas con el uso, rendimiento y estabilidad de la aplicación. </p> 
+           <p>
+             Los datos pueden ser procesados y almacenados en la infraestructura de Google bajo sus propias{" "}
+             <a
+               href="https://policies.google.com/privacy"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4"
+             >
+               medidas de seguridad y políticas de privacidad
+             </a>
+             .
+           </p> <p> Aplicamos medidas razonables de seguridad para proteger la información almacenada y restringir accesos no autorizados. Sin embargo, ningún sistema conectado a Internet puede garantizar seguridad absoluta. </p> 
+           <p> Como proyecto open source, parte del código fuente de reservApp puede consultarse públicamente con fines de transparencia y auditoría. </p> <p> Los usuarios pueden solicitar la modificación o eliminación de sus datos contactando con el responsable del proyecto. </p> 
+           <p> Esta política podrá actualizarse conforme evolucione el proyecto o se incorporen nuevas funcionalidades. </p> 
+           <p className="text-muted-foreground pt-4 text-sm font-medium"> Última actualización: Mayo 2026 </p>
           </div>
         </div>
       </motion.div>

@@ -26,17 +26,25 @@ export default function TermsAndConditions() {
           </div>
 
           <div className="text-foreground/90 space-y-6 text-lg leading-relaxed">
+            <p> reservApp es una aplicación en fase MVP (Producto Mínimo Viable) destinada a facilitar la gestión de reservas y comunidades. </p> 
+            <p> Al utilizar esta plataforma, aceptas hacer un uso legal, responsable y respetuoso del servicio, evitando actividades fraudulentas, accesos no autorizados o cualquier acción que pueda perjudicar a otros usuarios o al funcionamiento de la aplicación. </p> 
+            <p> El software se proporciona "tal cual", sin garantías explícitas de disponibilidad continua, ausencia de errores o compatibilidad con todos los dispositivos y escenarios de uso. </p> 
+            <p> El usuario es responsable de la información y contenido que comparta dentro de la plataforma. </p> 
+            <p> reservApp se reserva el derecho de limitar, suspender o bloquear el acceso a usuarios que incumplan estas condiciones o hagan un uso indebido del servicio. </p> 
             <p>
-              Estamos trabajando para definir los términos y condiciones detallados de reservApp. Al tratarse de una
-              versión MVP (Producto Mínimo Viable) y un proyecto de código abierto, nuestro objetivo principal es
-              facilitar la gestión de comunidades de forma transparente y gratuita.
-            </p>
-            <p>
-              Por el momento, el uso de esta aplicación implica la aceptación de que el software se proporciona "tal cual",
-              sin garantías de ningún tipo, y que el usuario es responsable del uso que haga de la plataforma y del
-              contenido que comparta en ella.
-            </p>
-            <p className="text-muted-foreground pt-4 text-sm font-medium">Última actualización: Mayo 2026</p>
+              La plataforma utiliza servicios de terceros proporcionados por{" "}
+              <a
+                href="https://firebase.google.com/support/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4"
+              >
+                Firebase y Google Analytics
+              </a>{" "}
+              para funcionalidades de infraestructura, almacenamiento y análisis técnico.
+            </p> 
+            <p> Estos términos podrán actualizarse conforme evolucione el proyecto o se incorporen nuevas funcionalidades. </p> 
+            <p className="text-muted-foreground pt-4 text-sm font-medium"> Última actualización: Mayo 2026 </p>
           </div>
         </div>
       </motion.div>
