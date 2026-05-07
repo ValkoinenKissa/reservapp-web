@@ -25,13 +25,19 @@ export function DesktopNav({ items, className }: Props) {
         <NavigationMenuList className="gap-8">
           {items.map((item) => (
             <NavigationMenuItem key={item.href}>
-              <NavigationMenuLink href={item.href}>{item.label}</NavigationMenuLink>
+              <NavigationMenuLink
+                href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              >
+                {item.label}
+              </NavigationMenuLink>
             </NavigationMenuItem>
           ))}
         </NavigationMenuList>
       </NavigationMenu>
       <Button asChild>
-        <Link href="/pricing">Comenzar</Link>
+        <Link href={process.env.NEXT_PUBLIC_DOWNLOAD_URL || "#download"}>Comenzar</Link>
       </Button>
     </nav>
   );

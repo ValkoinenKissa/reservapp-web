@@ -3,12 +3,11 @@
 
 # Security policy
 
-## Reporting a vulnerability
+## Reporting a Vulnerability
 
-Please see the [Paddle Vulnerability Disclosure Policy](https://www.paddle.com/vulnerability-disclosure-policy) and
-report any vulnerabilities using https://vdp.paddle.com/p/Report-a-Vulnerability.
+Please report any security vulnerabilities to our team.
 
 > [!WARNING]
 > Do not create issues for potential security vulnerabilities. Issues are public and can be seen by potentially malicious actors.
 
-Thanks for helping to make the Paddle platform safe for everyone.
+Thanks for helping to make the platform safe for everyone.

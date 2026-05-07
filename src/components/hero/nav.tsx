@@ -4,15 +4,15 @@ import { DesktopNav } from "@/components/hero/desktop-nav";
 const navItems = [
   {
     label: "Funciones",
-    href: "/#features",
-  },
-  {
-    label: "Precios",
-    href: "/pricing",
+    href: "/#funciones",
   },
   {
     label: "Legal",
     href: "/terms-and-conditions",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/ValkoinenKissa/reservapp-web",
   },
 ];
 

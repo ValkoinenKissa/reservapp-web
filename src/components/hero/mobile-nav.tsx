@@ -24,7 +24,12 @@ export function MobileNav({ items, className }: Props) {
         <DrawerContent className="flex flex-col gap-4 p-8">
           <DrawerTitle className="sr-only">Menu</DrawerTitle>
           {items.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link
+              key={item.href}
+              href={item.href}
+              target={item.href.startsWith("http") ? "_blank" : undefined}
+              rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+            >
               {item.label}
             </Link>
           ))}

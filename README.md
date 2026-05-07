@@ -1,64 +1,85 @@
-# Paddle Mobile Web Payments Starter
+# reservApp - Gestión de Comunidades Open Source
 
-[Paddle Billing](https://www.paddle.com/solutions/web-stores?utm_source=dx&utm_medium=paddle-in-app-checkout-starter) is the developer-first merchant of record. We take care of payments, tax, subscriptions, and metrics with one unified API that does it all.
+**reservApp** es una solución integral y 100% de código abierto diseñada para simplificar la gestión de comunidades. Este proyecto proporciona una interfaz moderna, rápida y centrada en el usuario para facilitar la administración y reserva de espacios comunes.
 
-This is a Next.js starter project for implementing marketing pages, including a pricing page, and Paddle checkout on Web for an iOS app.
+Este proyecto proporciona una experiencia premium en la gestión de servicios comunitarios con un diseño moderno y eficiente.
 
-As of April 30, 2025, Apple's updated App Store rules allow app developers to use third-party payment processors like Paddle for in-app purchases. This starter shows you how to implement a web-based checkout that can be opened from iOS apps.
+## Tecnologías Usadas
 
-Even though you're redirecting users to Web to complete their purchase, **Apple pay is still supported**.
+El proyecto utiliza un stack tecnológico de última generación para garantizar rendimiento y escalabilidad:
 
-## ⚡️ Instantly clone & deploy
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router & Turbopack)
+- **Lenguaje**: [TypeScript](https://www.typescriptlang.org/)
+- **Estilos**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Componentes UI**: [Radix UI](https://www.radix-ui.com/) y [Lucide React](https://lucide.dev/)
+- **Animaciones**: [Motion](https://motion.dev/) (framer-motion)
+- **Analytics**: [Vercel Analytics](https://vercel.com/analytics) y [Speed Insights](https://vercel.com/speed-insights)
+- **Notificaciones**: [Sonner](https://sonner.emilkowal.ski/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPaddleHQ%2Fpaddle-mobile-web-payments-starter&env=APPLE_TEAM_ID,NEXT_PUBLIC_BUNDLE_IDENTIFIER,NEXT_PUBLIC_APP_REDIRECT_URL,NEXT_PUBLIC_PADDLE_CLIENT_TOKEN,NEXT_PUBLIC_PADDLE_ENV)
+## Características Principales
 
-## 🔦 About
+- **Gestión Transparente**: Control total sobre las reservas de la comunidad.
+- **Diseño Premium**: Interfaz fluida con efectos de "Liquid Glass" y animaciones micro-interactivas.
 
-This starter project provides a fully functional implementation of a Paddle checkout within a Next.js application that can be easily embedded into iOS apps.
+## Primeros Pasos
 
-## ✨ Features
+### Prerrequisitos
 
-- Global tax compliance — As a merchant of record, Paddle handles all tax calculations, collections, and remittances so you don't have to.
-- Chargeback protection — Paddle manages chargebacks, combats fraud, and prevents card attacks, keeping your business secure.
-- Lower fees than IAPs — Connect directly with your users to reduce fees while increasing customer lifetime value.
-- Integrated with Paddle Retain — Minimize churn and maximize revenue with our comprehensive suite of retention tools.
-- Buyer support included — Customers can self-serve through our portal, while Paddle handles all order inquiries.
-- All-in-one payment platform — Enable new payment methods instantly without additional code or merchant accounts.
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) (v18+) y un gestor de paquetes como `pnpm`, `npm` o `yarn`.
 
-## 📦 Included packages
+### Instalación
 
-- Next.js 15
-- `@paddle/paddle-js` for launching a checkout
-- React 19
-- TypeScript
-- Tailwind CSS
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/ValkoinenKissa/reservapp-web.git
+   cd reservapp-web
+   ```
 
-## 🏁 Getting started
+2. Instala las dependencias:
+   ```bash
+   pnpm install
+   ```
 
-### Development
+3. Ejecuta el servidor de desarrollo:
+   ```bash
+   pnpm dev
+   ```
 
-First, run the development server:
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Variables de Entorno
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the checkout page.
+Crea un archivo `.env.local` basado en `.env.example` con las siguientes variables:
 
-### Environment variables
+- `APPLE_TEAM_ID`: Tu ID de equipo de Apple (para Universal Links).
+- `NEXT_PUBLIC_BUNDLE_IDENTIFIER`: Identificador de paquete de tu aplicación iOS.
+- `NEXT_PUBLIC_DOWNLOAD_URL`: Enlace personalizado para los botones de descarga (por defecto `#download`).
 
-Create a `.env.local` file based on `.env.example` with the following variables:
+## Guía de Desarrollo
 
-- `APPLE_TEAM_ID` - Your Apple Team ID (for Universal Links)
-- `NEXT_PUBLIC_BUNDLE_IDENTIFIER` - Your iOS app's bundle identifier
-- `NEXT_PUBLIC_APP_REDIRECT_URL` - The redirect url back to your app
-- `NEXT_PUBLIC_PADDLE_CLIENT_TOKEN` - Your Paddle client token
-- `NEXT_PUBLIC_PADDLE_ENV` - Paddle environment (`sandbox` or `production`)
+### Estructura del Proyecto
 
-For more detailed setup instructions, check out [Paddle's documentation to deploy your starter app and launch a checkout from iOS](https://developer.paddle.com/build/nextjs-vercel-mobile-app-starter-kit).
+- `src/components`: Componentes modulares de la interfaz (Hero, Footer, FAQs, etc.).
+- `src/app`: Rutas y páginas principales utilizando Next.js App Router.
+- `src/hooks`: Hooks personalizados para lógica de estado y UI.
+- `src/lib`: Utilidades, tipos y configuraciones compartidas.
+- `public`: Activos estáticos como imágenes, logos y fuentes.
+
+### Estilo y Diseño
+
+Utilizamos un sistema de diseño basado en componentes de Radix UI estilizados con Tailwind CSS. Para mantener la coherencia visual:
+- Usa las variables de color definidas en el tema.
+- Implementa animaciones suaves usando el componente `Motion`.
+- Asegúrate de que todos los nuevos componentes sean responsivos.
+
+## Despliegue
+
+La forma más sencilla de desplegar reservApp es usando la [Plataforma Vercel](https://vercel.com/new).
+
+1. Conecta tu repositorio de GitHub a Vercel.
+2. Configura las variables de entorno mencionadas anteriormente en la configuración del proyecto en Vercel.
+3. Vercel detectará automáticamente Next.js y realizará el despliegue.
+
+---
+
+Desarrollado con ❤️ para comunidades modernas. Basado en el trabajo original de [Paddle](https://paddle.com).

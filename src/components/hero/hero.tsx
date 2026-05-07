@@ -28,7 +28,7 @@ export function Hero() {
           Simple, rápida y centrada en el usuario para hacerte la vida más simple, prueba reservApp hoy mismo.
         </p>
         <Button className="mb-10 w-fit" size="lg" asChild>
-          <Link href="/pricing">Comienza hoy</Link>
+          <Link href={process.env.NEXT_PUBLIC_DOWNLOAD_URL || "#download"}>Comienza hoy</Link>
         </Button>
         <Image src="/app-image-1.png" alt="Hero" width={304} height={445} />
       </div>
