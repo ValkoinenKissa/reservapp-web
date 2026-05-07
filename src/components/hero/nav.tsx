@@ -4,7 +4,7 @@ import { DesktopNav } from "@/components/hero/desktop-nav";
 const navItems = [
   {
     label: "Funciones",
-    href: "/#features",
+    href: "/#funciones",
   },
   {
     label: "Legal",

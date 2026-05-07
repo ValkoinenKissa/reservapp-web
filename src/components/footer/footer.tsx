@@ -7,13 +7,13 @@ const links = [
     title: "reservApp",
     links: [
       {
-        label: "Descargar App",
-        href: "https://apps.apple.com/",
-        title: "Descargar la aplicación de la App Store",
+        label: "Descarga la App",
+        href: "https://appdistribution.firebase.dev/i/2cbda43978c9b8ec",
+        title: "Descargar la aplicación desde Firebase App Distribution",
       },
       {
         label: "Funciones",
-        href: "/#features",
+        href: "/#funciones",
         title: "Mira nuestras funciones",
       },
     ],
