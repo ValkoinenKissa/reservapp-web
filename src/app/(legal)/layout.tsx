@@ -1,6 +1,12 @@
 import { Footer } from "@/components/footer/footer";
 import { Nav } from "@/components/hero/nav";
-import { RadialBlur } from "@/components/pricing/radial-blur";
+import { RadialBlur } from "@/components/ui/radial-blur";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Legal - reservApp",
+  description: "Información legal de reservApp",
+};
 
 export default function LegalLayout({ children }: { children: React.ReactNode }) {
   return (

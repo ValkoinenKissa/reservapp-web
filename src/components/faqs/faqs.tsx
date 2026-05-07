@@ -45,7 +45,7 @@ export function FAQs() {
           Obtén respuestas rápidas a las dudas más comunes.
         </p>
         <Button className="w-fit" size="lg" asChild>
-          <Link href="/pricing">Comienza ahora</Link>
+          <Link href="#download">Comienza ahora</Link>
         </Button>
       </div>
       <Accordion type="single" collapsible defaultValue="branding" className="grid w-full gap-4">

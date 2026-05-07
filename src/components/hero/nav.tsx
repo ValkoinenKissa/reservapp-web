@@ -7,12 +7,12 @@ const navItems = [
     href: "/#features",
   },
   {
-    label: "Precios",
-    href: "/pricing",
-  },
-  {
     label: "Legal",
     href: "/terms-and-conditions",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/ValkoinenKissa/reservapp-web",
   },
 ];
 

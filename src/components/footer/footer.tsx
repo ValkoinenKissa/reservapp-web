@@ -16,11 +16,6 @@ const links = [
         href: "/#features",
         title: "Mira nuestras funciones",
       },
-      {
-        label: "Precios",
-        href: "/pricing",
-        title: "Ver precios",
-      },
     ],
   },
   {
@@ -50,11 +45,6 @@ const links = [
         label: "Política de privacidad",
         href: "/privacy-policy",
         title: "Lee nuestra política de privacidad",
-      },
-      {
-        label: "Política de reembolso",
-        href: "/refund-policy",
-        title: "Lee nuestra política de reembolso",
       },
     ],
   },
@@ -97,7 +87,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="relative -mt-25 overflow-hidden py-12 pt-37 md:py-25 md:pt-37">
+    <footer id="download" className="relative -mt-25 overflow-hidden py-12 pt-37 md:py-25 md:pt-37">
       <FooterBlur />
       <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-8 px-6 tracking-tight md:grid-cols-4">
         {links.map((link) => (
