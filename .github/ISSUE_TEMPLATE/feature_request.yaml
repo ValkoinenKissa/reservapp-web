@@ -6,12 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form to send us suggestions for improvements to the Paddle mobile web payments starter kit.
-
-        For general feedback about the Paddle API or developer platform, contact our DX team directly
-        at [team-dx@paddle.com](mailto:team-dx@paddle.com).
-
-        Thanks for helping to make the Paddle platform better for everyone!
+        Use this form to send us suggestions for improvements to the reservApp web portfolio
+        Thanks for helping to make the reservApp platform better for everyone!
   - type: textarea
     id: request
     attributes:
