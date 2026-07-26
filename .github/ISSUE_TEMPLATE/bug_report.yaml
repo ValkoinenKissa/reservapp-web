@@ -6,13 +6,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form to report a bug or problem with the Paddle mobile web payments starter kit.
+        Use this form to report a bug or problem with the reservApp web portfolio.
 
         Remember to remove sensitive information from screenshots, videos, or code samples before submitting.
 
-        **Do not create issues for potential security vulnerabilities.** Please see the [Paddle Vulnerability Disclosure Policy](https://www.paddle.com/vulnerability-disclosure-policy) and report any vulnerabilities [using our form](https://vdp.paddle.com/p/Report-a-Vulnerability).
-
-        Thanks for helping to make the Paddle platform better for everyone!
+        **Do not create issues for potential security vulnerabilities.** Please see the [reservApp Vulnerability Disclosure Policy](https://github.com/ValkoinenKissa/reservapp-web/security/policy)
+        Thanks for helping to make the reservApp platform better for everyone!
   - type: textarea
     id: description
     attributes:
